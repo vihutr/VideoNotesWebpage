@@ -1,13 +1,4 @@
-﻿@font-face {
-    font-family: m5x7;
-    src: url(/font/m5x7.tff);
-}
-/*
-affects the elements only? not the padding or margin
-:root {
-	--main-bg-color: white;
-}
-*/
+﻿
 body
 {
 	background-color:rgb(255, 255, 255);
@@ -37,6 +28,7 @@ main{
 	padding: 10px;
 	margin: 10px;
 }
+
 .pixel {
 	/* first is chrome, 2nd is firefox */
 	image-rendering: pixelated; 
@@ -50,8 +42,6 @@ main{
 .static:hover {
 	opacity:0;
 }
-
-
 .links{
 	position:absolute;
 	text-align:center;
