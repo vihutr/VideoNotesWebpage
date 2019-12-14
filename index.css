@@ -1,0 +1,60 @@
+﻿@font-face {
+    font-family: m5x7;
+    src: url(/font/m5x7.tff);
+}
+/*
+affects the elements only? not the padding or margin
+:root {
+	--main-bg-color: white;
+}
+*/
+body
+{
+	background-color:rgb(255, 255, 255);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+h1{
+	color: rgb(0, 0, 0);
+	font-size:40px;
+	padding: 10px;
+	margin: 10px ;
+}
+header{
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	font-size:40px;
+	padding: 0px;
+	margin: 0px;
+	align-content: center;
+}
+main{
+	background-color: white;;
+	font-size: 30px;
+	padding: 10px;
+	margin: 10px;
+}
+.pixel {
+	/* first is chrome, 2nd is firefox */
+	image-rendering: pixelated; 
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+}
+.static {
+	position: absolute;
+	background: var(--main-bg-color);
+}
+.static:hover {
+	opacity:0;
+}
+
+
+.links{
+	position:absolute;
+	text-align:center;
+	bottom: calc(20vh - 100px);
+	width:100%;
+}

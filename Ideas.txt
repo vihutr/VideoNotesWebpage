@@ -1,0 +1,20 @@
+Have one half of the page with written analysis/notes with clickable timestamps while the other half has a youtube video of the match. Be able to switch left and right both of the halves. Dark and light theme.
+
+Click on a "Create Analysis" Button
+Creates analysis and lets you do the things above?
+
+Achieve:
+Halves of page: divs
+how to switch halves? (code to switch div positions) potentially also do bottom and top
+start with:
+div containing a text box
+div containing embedded video
+harder to do?:
+timestamps in text linking to video
+
+At some point add:
+- exporting or importing of these notes to be easily shareable.
+- posting public or private version? would require some database
+- would also require a login feature (branch on github before doing this?)
+
+Important: Prevent XSS
