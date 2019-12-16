@@ -1,0 +1,52 @@
+﻿:root {
+	--main-bg-color:rgb(22, 22, 22);
+}
+body
+{
+	background-color: var(--main-bg-color);
+	font-family: 'Source Code Pro', monospace;
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	line-height: calc(4em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+header{
+	background-color:rgb(60, 22, 65);
+	font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (4000 - 300)));
+	color: white;
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+	border-style: double none double none;
+}
+
+#main{
+	/*background-color: yellow;
+	/**/
+	color: white;
+	text-align: center;
+	font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (4000 - 300)));
+}
+#notes{
+	/*background-color: yellow;
+	/**/
+	color: white;
+	text-align: center;
+	font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (4000 - 300)));
+}
+
+.links{
+	position:absolute;
+	text-align:center;
+	bottom: calc(20vh - 110px);
+	width:100%;
+}
+
+.pixel {
+	/* first is chrome, 2nd is firefox */
+	image-rendering: pixelated; 
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+}

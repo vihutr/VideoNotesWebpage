@@ -7,33 +7,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="">
 	<meta name="description" content="Personal Test Website">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
 
 	<header>
-		<h1>A simple website for putting notes on a youtube video.</h1>
+		A simple webpage for creating notes in conjunction with a (youtube) video.
 	</header>
 
-	<main>
+	<div id = "main">
 		<!--<img class="logo" src="/images/logo.png" style="width:50px;height:50px">-->
-		<p>Enter a youtube link to start making notes:</p>
-		<form action = "/action_page.php" method="GET" id=videolinkIn>
-			<input type="text" name="videolink" size=40>
-		</form>
-		<button type="submit" form="videolinkIn" value="Submit">Submit</button>
-	</main>
+		<p>Enter a link to start making notes:</p>
+		<!-- <form action = "/videoget.php" method="GET" id=videolinkIn> -->
+			<input type="text" id="videolink" name="videolink" size=40>
+		<!-- </form> -->
+		<button id = "inLink" type="submit" form="videolinkIn" value="Submit" onclick="document.getElementById('videolink');">Submit</button>
+	</div>
+
+	<div id = "notes" style="display:none"> 
+		stuff
+	</div>
 
 	<footer>
 		<div class="links">
 			<a class="but" href="http://twitter.com/_vihutr">
-				<img class="pixel static" src="images/Twitter.png" style="width:64px;height:64px">
-				<img class="pixel active" src="images/Twitter.gif" style="width:64px;height:64px">
+				<img class="pixel credits" src="images/twitter/Twitter.png" style="width:64px;height:64px">
 			</a>
 		</div>
 	</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
