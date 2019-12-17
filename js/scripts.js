@@ -10,18 +10,49 @@ $(document).ready(function(){
     );                  
 });
 
+//when button is clicked
 $('#inLink').on('click',function(){
 
-    if($('#main').css('display')!='none'){
+    if($('#main1').css('display')!='none'){
 
-    $('#notes').html($('#notes').html()).show().siblings('div').hide();
+    $('#main2').html($('#main2').html()).show().siblings('div').hide();
 
-    } else if($('#notes').css('display')!='none'){
+    } else if($('#main2').css('display')!='none'){
 
-        $('#main').show().siblings('div').hide();
+        $('#main1').show().siblings('div').hide();
 
     }
+
+    $('header').hide();
+    $('.links').hide();
+
+    //ex for working with iframe as is
+    //https://www.youtube.com/embed/KRZhbQuG1n8
+    loadIframe('videoembed', $('#videolink').val());
+    console.log("Button Pressed:");
+    console.log($('#videolink').val());
+
+    //work on converting urls into embeddable versions later
 });
+
+
+function getId(url) {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+
+    return (match && match[2].length === 11)
+      ? match[2]
+      : null;
+}
+
+function loadIframe(iframeName, url) {
+    var $iframe = $('#' + iframeName);
+    if ( $iframe.length ) {
+        $iframe.attr('src',url);   
+        return false;
+    }
+    return true;
+}
 
 /* attempt at framebyframe anim, not worth
 const $element = $('.credits');

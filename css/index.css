@@ -6,7 +6,7 @@ body
 	background-color: var(--main-bg-color);
 	font-family: 'Source Code Pro', monospace;
 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	line-height: calc(4em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+	line-height: calc(3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 	color: #000000;
 	padding: 0px;
 	margin: 0px;
@@ -16,31 +16,54 @@ header{
 	background-color:rgb(60, 22, 65);
 	font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (4000 - 300)));
 	color: white;
-	padding: 10px;
-	margin: 0px;
 	text-align: center;
 	border-style: double none double none;
 }
 
-#main{
+#main1{
 	/*background-color: yellow;
 	/**/
 	color: white;
 	text-align: center;
 	font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (4000 - 300)));
 }
-#notes{
-	/*background-color: yellow;
-	/**/
+#main2{
+	background-color: yellow;
+	display:none;
 	color: white;
 	text-align: center;
 	font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (4000 - 300)));
+}
+#textdiv{
+	float: left;
+	overflow: hidden;
+	padding: 1vw;
+	width: 45vw;
+	height: 95vh;
+	text-align: center;
+}
+#textbox{
+	width: 99%;
+	height: 99%;
+	resize: none;
+}
+#videodiv{
+	float: left;
+	overflow: hidden;
+	padding: 1vw;
+	width:50vw;
+	height: 95vh;
+	text-align: center;
+}
+#videoembed{
+	width: 99%;
+	height: 99%;
 }
 
 .links{
 	position:absolute;
 	text-align:center;
-	bottom: calc(20vh - 110px);
+	bottom: 1vh;
 	width:100%;
 }
 

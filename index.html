@@ -17,18 +17,23 @@
 		A simple webpage for creating notes in conjunction with a (youtube) video.
 	</header>
 
-	<div id = "main">
+	<div id = "main1">
 		<!--<img class="logo" src="/images/logo.png" style="width:50px;height:50px">-->
 		<p>Enter a link to start making notes:</p>
 		<!-- <form action = "/videoget.php" method="GET" id=videolinkIn> -->
 			<input type="text" id="videolink" name="videolink" size=40>
 		<!-- </form> -->
-		<button id = "inLink" type="submit" form="videolinkIn" value="Submit" onclick="document.getElementById('videolink');">Submit</button>
+		<button id = "inLink" type="submit" form="videolinkIn" value="Submit">Submit</button>
 	</div>
 
-	<div id = "notes" style="display:none"> 
-		stuff
-	</div>
+	<section id = "main2"> 
+		<div id = "textdiv">
+			<textarea id = "textbox"></textarea>
+		</div>
+		<div id = "videodiv">
+			<iframe id="videoembed" title="Video" src="" allowfullscreen></iframe>
+		</div>
+	</section>
 
 	<footer>
 		<div class="links">
